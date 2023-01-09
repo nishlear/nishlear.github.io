@@ -3,23 +3,94 @@ html, body {
     overflow: hidden;
     padding: 0;
     margin: 0;
-
+}
+#banner {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
     background: url('texas.jpg'); 
     background-size: cover;
     background-attachment: fixed;
 }
+#banner .banner-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.9;
+
+    height: 100%;
+    width: 100%;
+}
+#banner .banner-content {
+    position: absolute;
+    color: white;
+    width: 100%;
+    background-color: rgba(255,255,255,0.25);
+    /* margin-top: 50%; */
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 50;
+    background-color: rgba(251, 108, 211, 0.25);
+    height: 100vh;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0 1rem;
+    padding: 0;
+
+    /* display: flex; */
+    /* align-items: stretch; */
+    /* flex-direction: column; */
+}
+nav ul li {
+    border: 1px solid black;
+}
 #page1 {
+    position: relative;
     height: 100vh;
     width: 100vw;
-    /* background-color: lightgreen; */
+    background-color: lightgreen;
+}
+#page1 .page1-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0.9;
+
+    height: 100%;
+    width: 100%;
 }
 #page2 {
     height: 100vh;
     width: 100vw;
     background-color: skyblue;
 }
+#page2 .page2-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0.9;
+
+    height: 100%;
+    width: 100%;
+}
 #page3 {
     height: 100vh;
     width: 100vw;
     background-color: pink;
+}
+#page3 .page3-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0.9;
+
+    height: 100%;
+    width: 100%;
 }
